@@ -20,18 +20,18 @@
 #define MAX_BT_DEVICENAME_LENGTH 40
 
 #define MASTER  // undefine if you are not flashing the main controller
-#define SPLIT_MASTER	 // undefine if keyboard is not split and master
+//#define SPLIT_MASTER	 // undefine if keyboard is not split and master
 //#define SLAVE	 // undefine if keyboard is master
 
 #define DEBOUNCE 4 //debounce time in ms
 
 //Define matrix
-#define KEYPADS 2 // intended in order to create a Multiple keypad split boards
-#define MATRIX_ROWS 6
-#define MATRIX_COLS 6 // For split keyboards, define columns for one side only.
+#define KEYPADS 1 // intended in order to create a Multiple keypad split boards
+#define MATRIX_ROWS 3
+#define MATRIX_COLS 3 // For split keyboards, define columns for one side only.
 
-#define NKRO // does not work on Android and iOS!,  we can get 18KRO on those
-#define LAYERS 3 // number of layers defined
+//#define NKRO // does not work on Android and iOS!,  we can get 18KRO on those
+#define LAYERS 1 // number of layers defined
 
 // Select diode direction
 #define COL2ROW
@@ -39,7 +39,7 @@
 
 //Encoder definitions
 //#define R_ENCODER // undefine if no rotary encoder is used
-#define R_ENCODER_SLAVE // undefine if no rotary encoder is used on slave pad
+//#define R_ENCODER_SLAVE // undefine if no rotary encoder is used on slave pad
 #define ENCODER_A_PIN GPIO_NUM_17 // encoder phase A pin
 #define ENCODER_B_PIN GPIO_NUM_34// encoder phase B pin
 #define ENCODER_S_PIN GPIO_NUM_16// encoder switch pin
